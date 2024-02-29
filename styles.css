@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #111;
+  color: #fff;
+}
+
+/* Header Section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+  width: 100%;
+  max-width: 1440px;
+  height: 95px;
+  margin: 0 auto;
+}
+
+.namePortfolio {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-header li {
+  list-style: none;
+}
+
+.nav-header li > a {
+  color: #fff;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1440px;
+  padding: 80px 100px;
+  margin: 0 auto;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 50%;
+}
+
+.hero-info > p:first-child {
+  font-size: 1.9rem;
+  letter-spacing: 1.5px;
+  line-height: 30px;
+}
+
+.hero-info > p:nth-child(2) {
+  font-size: 1.4rem;
+  letter-spacing: 1.5px;
+  line-height: 20px;
+  color: #D9D9D9;
+}
+
+.hero-info > a {
+  width: fit-content;
+  background-color: #34A7FF;
+  padding: 15px 25px;
+  color: black;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.photo {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+.photo img {
+  width: inherit;
+}
+
+/* Container skills and tools */
+.container-skills-tools {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.skills, .tools {
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.skills > h3, .tools > h3 {
+  font-size: 2rem;
+  padding-bottom: 8px;
+  border-bottom: 2px solid white;
+  letter-spacing: 2px;
+}
+
+.skills-info-dev h5, .tools-info-dev h5 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.skills-info-dev > span,
+.tools-info-dev > span {
+  color: #D9D9D9;
+  letter-spacing: 1px;
+}
