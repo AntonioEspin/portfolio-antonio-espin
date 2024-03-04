@@ -37,6 +37,10 @@ body {
   gap: 40px;
 }
 
+.nav-header > img {
+  display: none;
+}
+
 .nav-header li {
   list-style: none;
 }
@@ -296,3 +300,106 @@ body {
   border-top-right-radius: 0px;
 }
 
+/* Media queries */
+
+@media (width < 900px) {
+
+  .header {
+    padding: 0 15px;
+  }
+
+  .nav-header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .nav-header {
+    display: none;
+  }
+
+  .nav-header > img {
+    display: block;
+    cursor: pointer;
+  }
+
+
+  .nav-header > li {
+    font-weight: bold;
+  }
+
+  .nav-header > li > a {
+    font-size: 2.5rem;
+  }
+  .hero {
+    flex-direction: column;
+    padding: 80px 15px;
+  }
+
+  .hero-info {
+    width: 100%;
+    order: 2;
+  }
+
+  .photo {
+    order: 1;
+    margin-bottom: 50px;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .project {
+    flex-direction: column;
+    padding: 0 15px;
+    height: auto;
+    background: linear-gradient(to top, #131516, #0A2647);
+  }
+
+  .img-project {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .project-info {
+    width: 100%;
+  }
+
+  .second-project {
+    order: 1;
+  }
+
+  .second-info {
+    order: 2;
+  }
+
+  .container-skills-tools {
+    flex-direction: column;
+    padding: 0 15px;
+  }
+
+  .contact {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .contact > p {
+    font-size: 4rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    padding: 0 15px;
+    gap: 30px;
+  }
+}
