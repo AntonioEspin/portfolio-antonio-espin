@@ -31,6 +31,10 @@ body {
   cursor: pointer;
 }
 
+.header > img {
+  display: none;
+}
+
 .nav-header {
   display: flex;
   align-items: center;
@@ -306,6 +310,11 @@ body {
 
   .header {
     padding: 0 15px;
+  }
+
+  .header > img {
+    display: block;
+    cursor: pointer;
   }
 
   .nav-header {
